@@ -1,0 +1,8 @@
+scikit_image==0.17.2
+numpy==1.19.3
+Flask==1.1.1
+opencv_python==4.4.0.46
+matplotlib==3.3.2
+Keras==2.4.3
+Pillow==8.1.0
+skimage==0.0

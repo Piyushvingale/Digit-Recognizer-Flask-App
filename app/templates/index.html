@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digit Recognizer App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!-- CSS  -->
+    <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <body onload="pencil()">
+        <p><table>
+            <tr>
+            <td>
+                <fieldset id="toolset">
+                <br>
+                <br>
+                <button id="penciltool" type="button" style="height: 25px; width: 100px;" onclick="pencil()">Pencil</button>
+                <br>
+                <br>
+                <br>
+                <button id="linetool" type="button" style="height: 25px; width: 100px;" onclick="line()">Line</button>
+                <br>
+                <br>
+                <br>
+                <button id="resettool" type="button" style="height: 25px; width: 100px;" onclick="reset()">Reset</button> 
+                </fieldset>
+            </td>
+            <td>
+                <canvas id="paint" width="450" height="450" style="border: 5px solid #000000;"></canvas>
+            </td>
+            </tr>
+        </table></p>
+        <table style="margin-left: 700px">
+          <tr>
+            <td>
+            <h2>You had written: </h2>
+              <h2 id="predicted_digit"></h2>
+            </td>
+          </tr>
+        </table>
+        <fieldset id="colorset">
+            <button id="save" class="btn-large" onclick="save()">Predict</button>
+        </fieldset>
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        
+</body>
+</html>
