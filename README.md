@@ -3,7 +3,7 @@ This webapp has a scratch pad like paint. Model for this webapp is trained on MN
 
 ![alt text](https://github.com/Piyushvingale/Digit-Recognizer-Flask-App/blob/main/digitrecognizer.PNG)
 
-Step to run application:
+Step to run application: <br  />
 Step 1:	Create the copy of the project.
 Step 2: Open command prompt and change your current path 
 to folder where you can find 'app.py' file.
